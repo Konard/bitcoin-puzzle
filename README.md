@@ -18,5 +18,4 @@ hashcat -a 3 -m 30901 13zb1hQbWVsc2S7ZTZnP2G4undNNpdh5so "0000000000000000000000
 | `000000000000000000000000000000000000000000000002ffffff?h?h?h?h?h?h?h?h?h?h` | `○`    |
 | `000000000000000000000000000000000000000000000003000000?h?h?h?h?h?h?h?h?h?h` | `?`    |
 
-
-https://github.com/Konard/bitcoin-puzzle/raw/main/progress-draw/progress.png
+[![progress]([https://raw.githubusercontent.com/LinksPlatform/Documentation/master/doc/Intro/intro-animation-500.gif](https://github.com/Konard/bitcoin-puzzle/raw/main/progress-draw/progress.png) "progress")]([https://github.com/Konard/LinksPlatform/wiki/How-it-all-began](https://github.com/Konard/bitcoin-puzzle/raw/main/progress-draw/progress.png)https://github.com/Konard/bitcoin-puzzle/raw/main/progress-draw/progress.png)
