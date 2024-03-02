@@ -15,7 +15,7 @@ fn set_done_pixel(img: &mut RgbImage, current: u32) {
     let x = pixel_number % WIDTH;
     let y = pixel_number / WIDTH;
 
-    set_pixel(img, x, y, Rgb([0, 255, 0]));
+    set_pixel(img, x, y, Rgb([255, 0, 0]));
 }
 
 fn set_progress_pixel(img: &mut RgbImage, current: u32) {
