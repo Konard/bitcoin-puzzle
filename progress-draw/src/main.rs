@@ -1,7 +1,7 @@
 use image::{Rgb, RgbImage, ImageBuffer};
 
-const WIDTH: u32 = 8064;
-const HEIGHT: u32 = 8064;
+const WIDTH: u32 = 5794;
+const HEIGHT: u32 = 5794;
 
 fn set_pixel(img: &mut RgbImage, x: u32, y: u32, color: Rgb<u8>) {
     let pixel = img.get_pixel_mut(x, y);
@@ -25,7 +25,7 @@ fn set_progress_pixel(img: &mut RgbImage, current: u32) {
     let x = pixel_number % WIDTH;
     let y = pixel_number / WIDTH;
 
-    set_pixel(img, x, y, Rgb([0, 255, 0]));
+    set_pixel(img, x, y, Rgb([255, 255, 0]));
 }
 
 fn create_image() {
@@ -40,7 +40,7 @@ fn create_image() {
     //     }
     // }
 
-    for i in 65011712..WIDTH*HEIGHT {
+    for i in (0x3ffffff-0x2000000)..(WIDTH*HEIGHT) {
         let x = i % WIDTH;
         let y = i / WIDTH;
         
@@ -55,6 +55,9 @@ fn create_image() {
 }
 
 fn main() {
+    println!("{}", 0x3ffffff-0x2000000);
+    println!("{}", 5794*5794);
+
     create_image();
 
     println!("Image created.");
