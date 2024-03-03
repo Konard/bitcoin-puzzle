@@ -48,7 +48,7 @@ fn create_image() {
     }
 
     set_done_pixel(&mut img, 0x2ffffff);
-    set_progress_pixel(&mut img, 0x3000000);
+    set_done_pixel(&mut img, 0x3000000);
 
     // Save the image to a file
     img.save("progress.png").expect("Failed to save image.");
