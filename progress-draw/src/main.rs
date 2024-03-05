@@ -47,16 +47,18 @@ fn create_image() {
         set_pixel(&mut img, x, y, Rgb([0, 0, 255]));
     }
 
+    set_done_pixel(&mut img, 0x2000000);
     set_done_pixel(&mut img, 0x2ffffff);
     set_done_pixel(&mut img, 0x3000000);
+    set_progress_pixel(&mut img, 0x3ffffff);
 
     // Save the image to a file
     img.save("progress.png").expect("Failed to save image.");
 }
 
 fn main() {
-    println!("{}", 0x3ffffff-0x2000000);
-    println!("{}", 5794*5794);
+    // println!("{}", 0x3ffffff-0x2000000);
+    // println!("{}", 5794*5794);
 
     create_image();
 
